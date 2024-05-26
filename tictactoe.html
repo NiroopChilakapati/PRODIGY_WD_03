@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Tic Tac Toe</h1>
+    <div id="playerNames">
+      <label for="player1">Player 1 Name:</label>
+      <input type="text" id="player1" placeholder="Enter name">
+      <label for="player2">Player 2 Name:</label>
+      <input type="text" id="player2" placeholder="Enter name">
+      <button onclick="startGame()">Start Game</button>
+    </div>
+    <div id="gameBoard" style="display: none; position: absolute; left: 200px; top: 150px;">
+      <div id="board" class="board">
+        <div class="cell" onclick="handleClick(0)"></div>
+        <div class="cell" onclick="handleClick(1)"></div>
+        <div class="cell" onclick="handleClick(2)"></div>
+        <div class="cell" onclick="handleClick(3)"></div>
+        <div class="cell" onclick="handleClick(4)"></div>
+        <div class="cell" onclick="handleClick(5)"></div>
+        <div class="cell" onclick="handleClick(6)"></div>
+        <div class="cell" onclick="handleClick(7)"></div>
+        <div class="cell" onclick="handleClick(8)"></div>
+      </div>
+      <p id="message"></p>
+      <button onclick="resetGame()">Reset</button>
+    </div>
+    <div id="pointsTable" style="position: absolute; right: 400px; top: 150px;">
+      <h2>Points Table</h2>
+      <table>
+        <tr>
+          <th>Player</th>
+          <th>Wins</th>
+        </tr>
+        <tr>
+          <td id="player1Name"></td>
+          <td id="player1Wins">0</td>
+        </tr>
+        <tr>
+          <td id="player2Name"></td>
+          <td id="player2Wins">0</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="Home.js"></script>
+</body>
+</html>

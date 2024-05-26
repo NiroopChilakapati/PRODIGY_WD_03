@@ -1,0 +1,58 @@
+body {
+    background-color: black; /* Set the background color of the body to black */
+    color: white; /* Set the text color to white */
+  }
+  .container {
+      text-align: center;
+      margin-top: 50px;
+      
+    }
+    
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 2px;
+      
+    }
+    #gameBoard,
+  #pointsTable {
+    display: none;
+  }
+  
+    .cell {
+      background-color: #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      cursor: pointer;
+    }
+    
+    .cell:hover {
+      background-color: #ccc;
+    }
+    
+    button {
+      margin-top: 20px;
+    }
+    
+    #message {
+      font-weight: bold;
+    }
+    table {
+      border-collapse: collapse; /* Collapse borders */
+      width: 100%; /* Make table width 100% */
+    }
+    
+    th, td {
+      border: 1px solid white; /* Set border for th and td */
+      padding: 8px; /* Add padding */
+      text-align: center; /* Center-align text */
+      background-color: #ff66ffd4;
+    }
+    
+    #player1Name, #player2Name {
+      color: white; /* Set text color */
+    }
+    
